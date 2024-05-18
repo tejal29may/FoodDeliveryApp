@@ -1,0 +1,62 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background:linear-gradient(rgba(22, 23, 31, 0.8), rgba(33, 27, 29, 0.8)), url("https://th.bing.com/th/id/R.7ef308c9b8b9da433038dde472586d77?rik=%2f0sFETeFCg4WZA&riu=http%3a%2f%2fwww.lahke-recepty.sk%2fwp-content%2fuploads%2f2015%2f06%2fpizza-recept-600x394.png&ehk=MmOOr6Os%2fbivWsz20O%2b4j7U0unELM%2bHj720iH1BKdII%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px 0 0 0;
+
+
+}
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s ;
+}
+.header-content h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-content p{
+    color: white;
+    font-size: 1vw;
+}
+.header-content button{
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: red;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+}
+
+@media (max-width:1050px){
+    .header{
+        height: 38vw;
+    }
+    .header-content{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+    
+    .header-content{
+        max-width: 55%;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}
